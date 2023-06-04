@@ -1,0 +1,23 @@
+#loading_area {
+  margin-top: 100px;
+  display: flex;
+  width: 100%;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#loading_area ion-icon {
+  font-size: 48px;
+  color: rgb(11, 3, 41);
+  animation: 60s loading infinite forwards;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(10000deg);
+  }
+}/*# sourceMappingURL=loading.css.map */

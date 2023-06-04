@@ -1,0 +1,53 @@
+@import '../../../scss/global/global';
+
+header {
+  background:#232C33;
+  padding:20px;
+  .container {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+   
+
+    a {
+      &:nth-child(1){
+        display:inline-block;
+        color:white;
+        text-decoration:none;
+        font-size:20px;
+        font-weight:bold;
+       
+      }
+
+      &:nth-child(2){
+      display:inline-block;
+      padding:10px 20px;
+      text-decoration:none;
+      color:white;
+      position:relative;
+      top:0;
+      left:0;
+    }
+      
+      &::before{
+        position: absolute;
+        bottom:0;
+        left:0;
+        width:0;
+        transition:all .5s;
+        content:"";
+        display:block;
+        height:4px;
+        background-color:white;
+      }
+
+      &:hover {
+        &::before {
+          width:100%;
+        }
+      }
+    }
+  }
+
+
+}
